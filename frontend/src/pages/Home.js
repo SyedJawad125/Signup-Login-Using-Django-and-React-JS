@@ -13,7 +13,6 @@ const Home = () => {
       <div className="banner-slider">
         <BannerSlider />
       </div>
-     
     </div>
   )
 }
