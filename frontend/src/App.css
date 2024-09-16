@@ -1,0 +1,1354 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Side Navbar CSS */
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+.sidenav {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  padding: 0px 20px;
+}
+
+
+
+/* About Page CSS Start */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #06BD46;
+  color: white;
+}
+/* #474e5d */
+
+.container {
+  padding: 0 16px;
+  margin-left: '100px'
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+
+ 
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+
+/* .card-body .btn btn-danger {
+  margin-bottom: 10px;  
+} */
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+/* Contact Page CSS Start */
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+
+
+/* ReadMore.css */
+
+.read-more p {
+  display: inline;
+}
+
+.read-more .btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px; /* Space between text and icon */
+}
+
+.read-more .btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+ /* Header Navbar.css */
+
+ body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #06BD46;
+  padding: 1px;
+}
+
+.navbar a {
+  color: white;
+  padding: 8px 18px;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 10px; /* Add horizontal margin to create the gap */
+}
+
+.navbar a:hover {
+  color: rgb(26, 30, 26);
+}
+
+.navbar-brand a {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+.navbar-links a.active {
+  color: black; /* Change to your desired color */
+  font-weight: lighter; /* Optional: make the text bold */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #333;
+  color: white;
+  padding: 14px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown-divider {
+  height: 1px;
+  background-color: #ddd;
+  margin: 5px 0;
+}
+
+.navbar-cart {
+  position: relative;
+}
+
+.cart-icon {
+  color: rgb(179, 36, 36); /* Change the color */
+  transition: transform 0.3s ease, color 0.3s ease; /* Add transition for hover effect */
+}
+
+.cart-icon:hover {
+  transform: scale(1.2); /* Increase size on hover */
+  color: yellow; /* Change color on hover */
+}
+
+.cart-count {
+  position: absolute;
+  top: -10px;
+  right: 0px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+}
+
+.inline-group {
+  display: flex;
+  margin-left: 20px;
+ 
+}
+
+.inline-group input {
+  margin-right: 15px; /* Optional spacing adjustment */
+}
+button{
+   margin-right: 15px;
+   
+}
+
+
+#fname{
+  height: 40px; /* Adjust the value as needed */
+  width: 700px;
+}
+
+.my-custom-button {
+  background-color: #007bff; /* Green color */
+  color: white;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  padding: 10px 20px;
+  border: none; /* Remove default border */
+  border-radius: 5px;
+  /* height: auto; */
+  height: 47px;
+  cursor: pointer;
+}
+.my-custom-button:hover {
+  background-color: #380bab; /* Optional: Adds a hover effect */
+}
+.my-custom-button1 {
+  background-color: #007bff; /* Green color */
+  color: white;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  padding: 10px 20px;
+  border: none; /* Remove default border */
+  border-radius: 5px;
+  height: 47px;
+  cursor: pointer;
+}
+.my-custom-button1:hover {
+  background-color: #380bab; /* Optional: Adds a hover effect */
+}
+
+/* Div White Color */
+.inline-group1 {
+  display: flex;
+  margin-left: 20px;
+  background-color: white;
+}
+/* Paragraph Div White Color */
+.inline-group2 {
+  display: flex;
+  margin-left: 20px;
+  /* background-color: rgb(229, 16, 16); */
+  margin-right: auto;
+}
+/* Close Button CSS */
+.close-button {
+  /* Style the button itself (optional) */
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.close-button::after {
+  /* Create the "X" symbol using pseudo-element */
+  content: "\00d7";  /* Unicode character for "X" */
+  display: block;
+  text-align: center;
+}
+
+
+/* Css for All cards in Categories and Products       and       CSS for Check.js */
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  width: 250px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Ensures the image covers the entire area without stretching */
+}
+
+.card-img-top {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  
+}
+.card-body {
+  text-align: center;
+  height: 75px;
+}
+.btn-custom {
+  border-radius: 50px;
+}
+
+
+.card-title-custom {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: #08203a;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.card-text-custom {
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+/* New Design Contact Page CSS */
+
+body {
+  background-color: #f8f9fa;
+}
+.contact-form {
+  background: #fff;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 70%;
+}
+.contact-form .form-control {
+  border-radius: 1rem;
+}
+.contact-image {
+  text-align: center;
+}
+.contact-image img {
+  border-radius: 6rem;
+  width: 11%;
+  margin-top: -3%;
+}
+.contact-form form {
+  padding: 14%;
+}
+.contact-form form .row {
+  margin-bottom: -7%;
+}
+.contact-form h3 {
+  margin-bottom: 8%;
+  margin-top: -10%;
+  text-align: center;
+  color: #0062cc;
+}
+.contact-form .btnContact {
+  width: 50%;
+  border: none;
+  border-radius: 1rem;
+  padding: 1.5%;
+  background: #0062cc;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+.btnContactSubmit {
+  width: 50%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  color: #fff;
+  background-color: #0062cc;
+  border: none;
+  cursor: pointer;
+}
+
+/* Top Bar CSS */
+/* src/components/TopBar.css */
+
+.top-bar {
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.33rem 1rem;
+  font-size: 1rem;
+  z-index: 999;
+  position: sticky;
+  top: 0px; /* Adjust based on the height of your topbar */
+  padding: 3px 14px;
+
+}
+.left-content {
+  /* Optional styling for the left content */
+}
+.d-flex{
+  color: white;
+
+}
+
+.right-side {
+  float: right;
+  margin-right: 80px;
+  justify-content: space-between;
+  /* Other styles for the right-side content */
+}
+
+.top-bar .mr-2 {
+  margin-right: 0.5rem;
+  
+}
+
+.top-bar .mx-3 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  
+}
+
+/* src/components/Home/FullPageSlider.css */
+
+.full-page-slider {
+  height: 75vh;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  color: rgb(207, 162, 162);
+  font-size: 2rem;
+}
+
+.slider-image {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+.navbar-logo {
+  height: 40px; /* Adjust the height of the logo */
+  margin-left: 40px;
+}
+
+.logout-lpg{
+  color: white;
+}
+
+/* Login/SignUp Form CSS */
+
+.cards {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 500px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.card-bodies {
+  text-align: center;
+}
+.textbox {
+  margin: 10px; /* Adjust margin as needed */
+  border: 1px solid black;
+  padding: 8px; /* Adds padding inside the textbox */
+}
+
+/* SignUp button CSS */
+.call-to-action {
+  display: flex;
+  justify-content : flex-end;
+}
+
+.right-button {
+  padding: 8px 20px;
+  background-color: #e20b24;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.right-button:hover {
+  background-color: #ab0b0b; /* Optional: Adds a hover effect */
+}
+
+
+
+/* src/components/Footer.css */
+.footer {
+  background-color: #091E3E;
+  color: #fff;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+  height: 340px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 10px;
+}
+.footer-section-logo{
+  flex: 1;
+  margin: 0 50px;
+  /* left: 50; Align to the left */
+  bottom: 500px; /* Adjust this value to move the logo down */
+  margin-left: 20px;
+  margin-right: 80px;
+}
+.footer-logo{
+  width: 200px; /* Adjust the size as needed */
+  height: auto;
+}
+.footer-section h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #555;
+  padding-bottom: 10px;
+  color: #06BD46;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-links a {
+  color: #fff;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #555;
+  padding: 10px 0;
+  margin-top: 20px;
+  font-size: 14px;
+  padding-bottom: 0px;
+  color: #178adc;
+}
+/* rgb(101, 101, 223) */
+
+
+/* CSS for Cards Slider on the page src/Slider.js */
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+/* .card {
+  min-width: 20%; /* Adjust based on the number of visible cards */
+  /* box-sizing: border-box;
+  padding: 20px;
+  background: #eee;
+  text-align: center;
+ }   */
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5); /* background color */
+  color: red; /* arrow color */
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.arrow.left {
+  left: 0;
+}
+
+.arrow.right {
+  right: 0;
+} 
+
+/* src/App.css */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+
+
+/* Category_vertical_slider CSS */ /* Product_vertical_slider CSS */
+
+.vertical-slider-container {
+  position: fixed;
+  height: 600px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 205px; /* Adjust as necessary */
+  padding: 20px;
+  background-color: #f8f9fa;
+  overflow: hidden;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.slider-wrapper-verticle {
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider-item-verticle {
+  padding: 10px;
+}
+.card-verticle{
+  border-radius: 10px;
+  overflow: hidden;
+  width: 150px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card-verticle:hover {
+  transform: scale(1.1);
+}
+.card-image-verticle {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-title-custom, .card-text-custom {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+
+/* Home Page CSS */
+
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content-with-sidebar {
+  display: flex;
+  flex-grow: 1;
+}
+
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #fff;
+} 
+
+
+.card-image-verticle {
+  width: 100%;
+  height: auto;
+} 
+
+
+
+/* Image_banner.css */
+.image-banner {
+  position: relative;
+  width: 100%;
+  height: 250px; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+  /* filter: brightness(100%); */
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.banner-text h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.banner-text p {
+  font-size: 1.5rem;
+  margin: 10px 0 0;
+}
+
+.image-banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  mix-blend-mode: multiply; */
+}
+
+
+/* CSS fro Category Slider for Category in Home*/
+.Category_slider_card {
+  border-radius: 15px;
+  overflow: hidden;
+  width: 200px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.Category_slider_card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Ensures the image covers the entire area without stretching */
+}
+
+.Category_slider_card-img-top {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.card-bodyslider {
+  text-align: center;
+  height: 35px;
+}
+
+
+/* CSS for cards shows in Public Category page, 6 cards in row */
+.card-5 {
+  border-radius: 15px;
+  overflow: hidden;
+  width: 170px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card-image5 {
+  width: 100%;
+  height: 170px;
+  object-fit: cover; /* Ensures the image covers the entire area without stretching */
+}
+
+.card-body5 {
+  text-align: center;
+  height: 55px;
+}
+.card-body7 {
+  text-align: center;
+  height: 75px;
+}
+.card-5:hover {
+  transform: scale(1.1);
+}
+
+
+
+/* CSS for Detail Page */
+
+/* Ensure the container takes full width and centers its content */
+.container_product_datail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+/* Style the product detail section */
+.product-detail {
+  margin-right: 25px;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+  height: 500px;
+  margin-left: 500px;
+  margin-top: 1px;
+}
+
+/* Style the product image */
+.product-detail img {
+  width: 400px; /* Set a specific width */
+  height: 280px; /* Set a specific height */
+  object-fit: cover; /* Maintain aspect ratio and cover the area */
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Style the product name */
+.product-detail h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Style the product description and price */
+.product-detail p {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 10px 0;
+}
+
+.product-detail:hover {
+  /* transform: scale(1.1); */
+}
+
+
+
+/* CSS for AddToCartPage */
+
+.card-AddToCartPage {
+  border-radius: 15px;
+  overflow: hidden;
+  width: 250px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.card-image-AddToCartPage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Ensures the image covers the entire area without stretching */
+}
+
+.card-img-top-AddToCartPage {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  
+}
+.card-body-AddToCartPage {
+  text-align: center;
+  height: 100px;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: #fff;
+}
+
+.clickable-image {
+  cursor: pointer;
+}
+
+
+
+/* Tooltip.css */
+.tooltip-container {
+  position: absolute;
+  top: 60px; /* Adjust as needed */
+  right: 0; /* Adjust as needed */
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1000;
+}
+
+.tooltip-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.tooltip-item:last-child {
+  margin-bottom: 0;
+}
+
+.tooltip-image {
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+  margin-right: 10px;
+}
+
+.tooltip-item p {
+  margin: 0;
+  font-size: 14px;
+}
+/* Checkout CSS */
+
+.card-checkout {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  width: 320px; /* Adjust the width as needed */
+  height: 120px; /* Adjust the height as needed */
+}
+
+.card-checkout img {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.row.g-0 {
+  display: flex;
+  margin: 0;
+}
+
+.col-md-4 {
+  flex: 1 1 33.3333%;
+  max-width: 33.3333%;
+  padding: 0;
+}
+
+.col-md-8 {
+  flex: 1 1 66.6667%;
+  max-width: 66.6667%;
+  padding: 0;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.card-body-checkout {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-title-checkout {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-text-checkout {
+  margin-bottom: 0.5rem;
+}
+
+.text-muted {
+  color: #6c757d;
+}
+
+.top-right-button {
+  position: fixed;  /* Use 'absolute' if you want the button relative to a parent container */
+  top: 100px;  /* Adjust the distance from the top */
+  left: 250px;  /* Adjust the distance from the right */
+  z-index: 1000;  /* Ensure the button stays on top of other elements */
+}
+
+
+
+
+/* Navbar Hover Box CSS */
+.navbar-check:hover .hover-box {
+  display: block;
+}
+
+.hover-box {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 1;
+}
+
+/* .container {
+  width: 100%;
+  height: 100%;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.sidebar {
+  width: 20%;
+  height: 100%;
+}
+
+.main-content {
+  width: 80%;
+  height: 100%;
+  margin-top: 25px;
+} */
+
+/* About Page CSS */
+
+
+/* Container styling */
+.col-md-3.mb-3 {
+  margin-bottom: 1rem;
+}
+
+/* Card styling */
+.card-about {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-about:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.card-img-top-about {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Card body styling */
+.card-body-about {
+  padding: 1rem;
+  text-align: center;
+}
+
+.card-body-about h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.card-body-about .title {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.card-body-about p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+/* Button styling */
+.card-body-about .button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card-body-about-service .button:hover {
+  background-color: #0056b3;
+}
+
+/* Services Page CSS */
+
+.card-service {
+  width: 250px; /* Adjust width as needed */
+  height: 500px; /* Adjust height as needed */
+  border: 1px solid #e0e0e0; /* Light gray border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition */
+  overflow: hidden; /* Ensures rounded corners apply to children */
+}
+
+.card-service:hover {
+  transform: translateY(-10px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.card-img-top-services {
+  width: 100%; /* Full width image */
+  height: auto; /* Maintain aspect ratio */
+  border-bottom: 1px solid #e0e0e0; /* Bottom border */
+}
+
+.card-body-service {
+  padding: 15px; /* Padding for content */
+  background-color: #ffffff; /* White background */
+  text-align: center; /* Center align text */
+}
+
+.card-title {
+  font-size: 1.25rem; /* Slightly larger font size */
+  font-weight: bold; /* Bold font */
+  color: #333; /* Dark gray color */
+  margin-bottom: 10px; /* Space below title */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .col-md-3 {
+    margin-bottom: 15px;
+  }
+}
+
+
+
+.home-container {
+  width: 100%;
+}
+
+.banner-slider {
+  width: 100%;
+  height: auto; /* Adjust as needed */
+}
+
+.content-wrapper {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - [banner-height] - [footer-height]); /* Adjust according to your banner and footer height */
+}
+
+.left-side {
+  flex: 0 0 15%;
+  height: 100%;
+  overflow-y: auto; /* To ensure the vertical slider scrolls */
+  background-color: #f0f0f0; /* Light grey background */
+}
+
+.main-content {
+  flex: 1;
+  height: 100%;
+  background-color: #ffffff; /* White background */
+  overflow-y: auto; /* Ensure main content is scrollable if needed */
+}
+
+
+.logout-button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: inherit;
+  margin-left: 10px;
+}
+
+.logout-button:hover {
+  color:white;
+}
+
