@@ -8,6 +8,8 @@ register_controller = RegisterController()
 login_controller = LoginController()
 logout_controller = LogoutController()
 change_password_controller = ChangePasswordController()
+forget_password_controller = ForgetPasswordController()
+verify_otp_controller = VerifyOtpController()
 
 
 class RegisterAPIView(ModelViewSet):
@@ -33,3 +35,11 @@ class ChangePasswordAPIView(ModelViewSet):
     
     def post(self,request):
         return change_password_controller.change_password(request)
+    
+class VerifyOtpAPIView(ModelViewSet):
+    def post(self,request):
+        return verify_otp_controller.verify_otp(request)
+
+class ForgetPasswordAPIView(ModelViewSet):
+    def post(self,request):
+        return forget_password_controller.forget_password(request)
